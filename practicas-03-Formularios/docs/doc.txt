@@ -1,0 +1,55 @@
+=== Expresiones Regulares ===
+
+A menudo llamadas RegExp o RegEx son patrones que se utilizan para hacer coincidir combinaciones de caracteres en cadenas.
+
+Son un sistema para buscar, capturar o reemplazar texto utilizando patrones.
+
+Estos patrones permiten realizar una búsqueda de texto de una forma relativamente sencilla y abstracta, de forma que abarca una gran cantidad de posibilidades que de otra forma sería imposible o muy costosa.
+
+/patron/flags
+
+Flags de una RegExp:
+====================
+i Ignora mayúsculas y minúsculas. Se suele denominar insensible a mayús/minús.
+g Búsqueda global. Sigue buscando coincidencias en lugar de pararse al encontrar una.
+m Multilínea. Permite a ^ y $ tratar los finales de línea \r o \n
+
+Métodos de RegExp:
+==================
+El método test() ejecuta la búsqueda de una ocurrencia entre una expresión regular y una cadena especificada. Devuelve true o false.
+Retorna true si existe una coincidencia entre la expresión regular y la cadena especificada; de lo contrario retorna false.
+Use test()cuando desee saber si existe la ocurrencia de un patrón en una cadena
+
+Carácteres especiales:
+======================
+[ ] Rango de carácteres. Cualquiera de los caracteres del interior de los corchetes.
+| Establece una alternativa: lo que está a la izquierda o lo que está a la derecha.
+[0-9] Un dígito del 0 al 9.
+[A-Z] Letra mayúscula de la A a la Z. Excluye ñ o letras acentuadas.
+[a-z] Letra minúscula de la a a la z. Excluye ñ o letras acentuadas.
+[A-Za-z0-9] Carácter alfanumérico (letra mayúscula, minúscula o dígito).
+
+==============================
+=== Validación Formularios ===
+==============================
+
+* Form validation (opens new window): Antes de enviar datos al servidor, es importante asegurarse de que se completan todos los controles de formulario requeridos, y en el formato correcto.
+* Esto se denomina validación de formulario en el lado del cliente y ayuda a garantizar que los datos que se envían coinciden con los requisitos establecidos en los diversos controles de formulario.
+* La validación en el lado del cliente es una verificación inicial y una característica importante para garantizar una buena experiencia de usuario.
+* Sin embargo, ¡la validación en el lado del cliente no debe considerarse una medida de seguridad exhaustiva! * Tus aplicaciones siempre deben realizar comprobaciones de seguridad de los datos enviados por el formulario en el lado del servidor.
+* Website security(opens new window)
+
+Hay dos tipos diferentes de validación por parte del cliente que encontrarás en la web:
+
+* La validación de formularios incorporada utiliza características de validación de formularios HTML5, Esta validación generalmente no requiere mucho JavaScript. La validación de formularios incorporada tiene un mejor rendimiento que JavaScript, pero no es tan personalizable como la validación con JavaScript.
+* La validación con JavaScript se codifica utilizando JavaScript. Esta validación es completamente personalizable, pero debes crearlo todo (o usar una biblioteca).
+
+#HTML5
+======
+Esto se realiza mediante el uso de atributos de validación en los elementos del formulario.
+
+* required: (opens new window)Especifica si un campo de formulario debe completarse antes de que se pueda enviar el formulario.
+* minlength (opens new window)y maxlength (opens new window): Especifican la longitud mínima y máxima de los datos de texto (cadenas).
+* min (opens new window)y max (opens new window): Especifican los valores mínimo y máximo de los tipos de entrada numéricos.
+* type: Especifica si los datos deben ser un número, una dirección de correo electrónico o algún otro tipo de preajuste específico.
+* pattern (opens new window): Especifica una expresión regular que define un patrón que los datos que se introduzcan deben seguir.

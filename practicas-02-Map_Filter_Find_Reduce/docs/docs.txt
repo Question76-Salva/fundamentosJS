@@ -1,0 +1,54 @@
+====================================================================================
+=== Programación funcional - métodos avanzados de array - map find filter reduce ===
+====================================================================================
+ 
+Estos méotodos "no mutan" (modifican) el array original sino que "nos devuelven uno nuevo".
+
+Los objetos, arrays y funciones se pasan por referencia.
+
+=== map ===
+itera sobre coda elemento de un array y devuelve un nuevo array que contiene los resultados de llamar a la "función callback" en cada elemento. Esto lo hace sin mutar el array original.
+
+        "función callback" -> es una función que se pasa a otra función como un argumento, que luego se invoca dentro de la función
+                            externa para completar algún tipo de rutina o acción.
+                            Cuando se utiliza un función callback, se pasan 3 argumentos:
+                            - 1 argumento -> elemento actual que se está procesando.
+                            - 2 argumento -> índice de ese elemento.
+                            - 3 argumento -> array al que se llamó el método map.
+
+
+=== filter ===
+Crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
+Sirve también para "eliminar/no incluir" elementos en un array (resultado | nuevo array).
+
+
+=== find | método de búsqueda ===
+Devuelve el valor del primer elemento del array que cumple la función de prueba proporcionada.
+No devuelve un array, devuelve un "elemento" (objeto, string, number...)
+
+
+=== some | método de búsqueda ===
+Comprueba si "al menos" un elemento del array cumple con la condición implementada por la función proporcionada.
+Devuelve true o false.
+
+=== findIndex | método de búsqueda ===
+Devuelve el índice del primer elemento de un array que cumpla con la función de prueba proporcionada. 
+En caso contrario devuelve -1.
+
+
+=== slice ===
+Devuelve una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin (fin no incluido).
+El array original no se modificará.
+
+=== concat ===
+Se usa para "unir" dos o más arrays. Este método no cambia/muta los array existentes, sino que devuelve un nuevo array.
+
+=== spread operator ===
+Permite a un "elemento iterable" tal como un arreglo, objeto o string "ser expandido en lugares donde son esperados".
+Expandir -> hacer una copia de esos elementos
+
+=== reduce ===
+Ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor.
+
+=== split ===
+Divide un objeto de tipo String en un array, mediante un "separador".

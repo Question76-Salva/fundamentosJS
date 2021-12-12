@@ -1,0 +1,19 @@
+export e import
+===============
+* Lo primero que debes hacer para acceder a las funciones del módulo es exportarlas.
+* Esto se hace usando la declaración export.
+* Puedes exportar funciones, var, let, const y, como veremos más adelante clases.
+* Deben ser elementos de nivel superior; no puedes usar export dentro de una función, por ejemplo.
+* Esto se conoce como exportaciones con nombre.
+* Podemos exportar todo lo que queramos.
+* No se puede exportar dentro de funciones, clases.
+
+Al trabajar con "import/export" en el archivo index.html, hay que poner como atributo de la etiqueta <script>
+<script src="app.js" type="module"></script> (hay que poner el type="module") al archivo que recibe las importaciones.
+
+export default
+==============
+* También hay un tipo de exportación llamado exportación predeterminada.
+* Sólo se permite "una exportación predeterminada por módulo".
+* No necesitan nombre.
+* Al importar no va entre {}.

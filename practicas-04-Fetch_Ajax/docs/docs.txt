@@ -1,0 +1,48 @@
+=======================
+=== JS Fetch y Ajax ===
+=======================
+
+Fetch:
+====== 
+La API Fetch proporciona una interfaz para recuperar recursos.
+Fetch es una interfaz para hacer solicitudes AJAX en JavaScript. Es usado generalmente para hacer una solicitud a un API.
+
+El método fetch() toma un argumento obligatorio, la ruta de acceso al recurso que desea recuperar.
+
+Ajax:
+=====
+JavaScript Asíncrono + XML (XML viejito ahora utilizamos JSON).
+AJAX no es una tecnología por sí misma, es un término que describe un nuevo modo de utilizar conjuntamente varias tecnologías existentes.
+Esto incluye: HTML, CSS, JavaScript, DOM, JSON y lo más importante, el objeto XMLHttpRequest (XMLHttpRequest viejito ahora Fetch)
+Cuando estas tecnologías se combinan en un modelo AJAX, es posible lograr aplicaciones web capaces de actualizarse continuamente sin tener que volver a cargar la página completa.
+Esto crea aplicaciones más rápidas y con mejor respuesta a las acciones del usuario.
+#Métodos nativos para AJAX
+
+Métodos nativos para AJAX:
+==========================
+XMLHttpRequest
+fetch API
+
+#Fetch API
+==========
+Fetch api: Proporciona una interfaz JavaScript para hacer peticiones HTTP así como sus respuestas.
+También provee un método para obtener recursos de forma asíncrona por la red.
+fetch parámetros inicia el proceso de obtener un recurso de la red, devolviendo una promesa que se cumple una vez que la respuesta está disponible.
+Este tipo de funcionalidad se conseguía previamente haciendo uso de XMLHttpRequest
+
+
+Conceptos Claves al momento de hacer una petición HTTP:
+=======================================================
+* HTTP: Hypertext Transfer Protocol (HTTP) (o Protocolo de Transferencia de Hipertexto en español) es el nombre de un protocolo el cual nos permite realizar una petición de datos y recurso.
+* Ruta (PATH): Es la dirección de donde queremos obtener los recursos.
+* Métodos Http: HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. (GET, POST, PUT, PATCH, DELETE)
+* Cabeceras (headers): Cabeceras HTTP opcionales, que pueden aportar información adicional a los servidores.
+* Códigos de respuestas (Response Codes): Un código de estado, indicando si la petición ha sido exitosa, o no, y debido a que. más info (opens new window)cat http(opens new window)
+* JSON: JavaScript Object Notation, es un formato basado en texto estándar para representar datos estructurados en la sintaxis de objetos de JavaScript. Es comúnmente utilizado para transmitir datos en aplicaciones web
+
+Estructura del JSON
+===================
+Como se describió previamente, un JSON es una cadena cuyo formato recuerda al de los objetos literales JavaScript.
+Es posible incluir los mismos tipos de datos básicos dentro de un JSON que en un objeto estándar de JavaScript - cadenas, números, arreglos, booleanos, y otros literales de objeto.
+Esto permite construir una jerarquía de datos, como ésta: pokeapi/ditto
+Json Formatter Chrome
